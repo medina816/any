@@ -1,0 +1,32 @@
+.about {
+    width: 1440px;
+}
+.aboutin {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin-top: 50px;
+}
+.aboutin img {
+    width: 300px;
+    height: 200px;
+}
+.inside {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+
+ .btns button {
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: orange;
+    color: white;
+    border: none;
+    cursor: pointer;
+ }
+ .inside h2 {
+    color: orange;
+    font-size: 24px;
+ }

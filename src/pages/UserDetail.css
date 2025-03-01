@@ -1,0 +1,45 @@
+.user-detail-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f9fafb;
+    padding: 20px;
+  }
+  
+  .user-info {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 500px;
+    width: 100%;
+  }
+  
+  .user-name {
+    font-size: 32px;
+    font-weight: bold;
+    color: #333333;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+  }
+  
+  .user-image-container {
+    margin-bottom: 20px;
+  }
+  
+  .user-image {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #ff6347;
+  }
+  
+  .user-gender {
+    font-size: 18px;
+    color: #666666;
+    margin-top: 15px;
+  }
+  
