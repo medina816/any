@@ -1,20 +1,21 @@
 import React, { useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
-import { getCategory } from '../../redux/categories/categorySlice';
+import { getCategoryProducts, clearProducts } from '../../redux/categoryProduct/categoryProductsSlice';
 import './categoryProducts.css';
 
 function CategoryProducts() {
     const { id } = useParams();
     const dispatch = useDispatch();
-    
-    
-    const { products, loading, error } = useSelector((state) => state.category);
+
+    const { products, loading, error } = useSelector((state) => state.categoryProducts);
     
     useEffect(() => {
-        dispatch(getCategory(id));
+        dispatch(getCategoryProducts(id));
+        return () => dispatch(clearProducts()); 
     }, [dispatch, id]);
 
+   
     if (loading) return <div>Loading products...</div>;
     if (error) return <div>{error}</div>;
 

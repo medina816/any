@@ -4,8 +4,8 @@ import userReducer from "./user/userSlice";
 import saveReducer from "./idk/Idk";
 import dealReducer from './deal/dealSlice';
 import productsReducer from './products/productsSlice';
-import categoryReducer from './categories/categorySlice';
-import Category from "../components/cotegory/Cotegory";
+import categoriesReducer from './categories/categoriesSlice'
+import categoryProductsReducer from './categoryProduct/categoryProductsSlice'
 const store = configureStore({
   reducer: {
     colors: colorReducer,
@@ -13,7 +13,8 @@ const store = configureStore({
     idk: saveReducer,
     deal: dealReducer,
     products: productsReducer,
-    category: categoryReducer,
+    categories: categoriesReducer,
+   categoryProducts: categoryProductsReducer,
   },
 });
 
